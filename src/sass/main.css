@@ -1,0 +1,195 @@
+.card {
+  height: 424px !important;
+  padding: 2rem 3rem;
+  border-radius: 16px !important;
+  border: none !important;
+}
+
+body {
+  background-color: white;
+}
+
+.separator {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.pale_blue {
+  background-color: #DFF0D8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+.pale_blue .section_right {
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.pale_blue .section_right h1 {
+  font-weight: 800;
+  font-size: 53px;
+  margin-bottom: 1.5rem;
+}
+
+.pale_blue .section_right p {
+  margin-bottom: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.pale_blue .mockup {
+  position: absolute;
+  width: 50%;
+  right: 0px;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pale_blue .mockup img {
+  width: 20rem;
+}
+
+.pale_green {
+  background-color: #bef4d5;
+}
+
+.pale_green img {
+  width: 80% !important;
+}
+
+.pale_purple {
+  background-color: #d5d4f5;
+}
+
+.pale_red {
+  background-color: #ffd8d7;
+}
+
+.pale_orange {
+  background-color: #feeaca;
+}
+
+.hypay-wrapper {
+  margin: 2rem;
+}
+
+.logo {
+  width: 7rem;
+  height: 3.5rem;
+  background-image: url("../assets/images/hypay-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 1.5rem;
+}
+
+.email-box {
+  background-color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 25px;
+  padding: 0.5rem;
+  padding-right: 0.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 2.8rem;
+}
+
+.email-box button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none !important;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #01bfa5;
+  border-radius: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.email-box input {
+  border: none !important;
+}
+
+.email-box img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.email-box input:focus {
+  outline: none !important;
+}
+
+.sckeleton {
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+.sckeleton img {
+  width: 130px;
+  height: 170px;
+}
+
+.sckeleton h2 {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem 1rem 1rem 1rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: small;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  float: right;
+  margin-left: 2rem;
+}
+/*# sourceMappingURL=main.css.map */

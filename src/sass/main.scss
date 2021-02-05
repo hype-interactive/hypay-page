@@ -1,0 +1,152 @@
+@import './theme.scss';
+.card{
+    height: 424px !important;
+    padding: 2rem 3rem;
+    border-radius: 16px !important;
+    border: none !important;
+}
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+@mixin spacing {
+    margin-bottom: 1.5rem;
+}
+    
+
+
+body{
+    background-color:rgb(255, 255, 255);
+}
+.separator{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.pale_blue{
+    background-color: $pale_blue;
+    display:flex;
+    flex-direction:row;
+    overflow: hidden;
+    position: relative;
+
+    .section_right{
+        margin-top: 1rem;
+        width: 50%;
+        h1{
+            font-weight: 800;
+            font-size:53px;
+            @include spacing;
+        }
+        p{
+            @include spacing;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+    .mockup{
+        position: absolute;
+        width: 50%;
+        right: 0px;
+        top:0px;
+        @include flex-center;
+        img{
+            width: 20rem;
+        }
+    }
+}
+.pale_green{
+    background-color: $pale_green;
+    img{
+        width: 80% !important;
+    }
+}
+.pale_purple{
+    background-color: $pale_puple;
+}
+.pale_red{
+    background-color: $pale_red;
+}
+.pale_orange{
+    background-color: $pale_orange;
+}
+.hypay-wrapper{
+    margin: 2rem;
+}
+.logo{
+    width: 7rem;
+    height: 3.5rem;
+    background-image: url('../assets/images/hypay-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @include spacing;
+}
+.email-box{
+    background-color: white;
+    width: fit-content;
+    display: flex;
+    overflow:hidden;
+    flex-direction: row;
+    border-radius:25px;
+    padding:0.5rem;
+    padding-right: 0.2rem;
+    align-items: center;
+    text-align: center;
+    height: 2.8rem;
+    button{
+        @include flex-center;
+        align-items: center;
+        border:none !important;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: $whatsapp_green;
+        border-radius: 50%;
+        object-fit: contain;
+        
+    }
+    input{
+        border: none !important;
+    }
+    img{
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    input:focus {
+        outline:none !important;
+    }
+
+
+}
+
+.sckeleton{
+    text-align: center;
+    margin-top: 4.5rem;
+    img{
+        width: 130px;
+        height: 170px;
+    }
+    h2{
+        color: rgb(17, 17, 17);
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.36px;
+        width: 100%;
+        text-align: center
+    }
+    
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3rem 1rem 1rem 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-size:small;
+    ul{
+        list-style: none;
+        li{
+            float: right;
+            margin-left:2rem ;
+        }
+    }
+}
