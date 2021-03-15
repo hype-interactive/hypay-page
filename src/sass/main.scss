@@ -12,7 +12,8 @@
 @mixin spacing {
     margin-bottom: 1.5rem;
 }
-    
+
+
 
 
 body{
@@ -55,18 +56,30 @@ body{
 }
 .pale_green{
     background-color: $pale_green;
+    position: relative;
     img{
         width: 80% !important;
     }
 }
 .pale_purple{
     background-color: $pale_puple;
+    .animate__tada{
+        --animate-duration:1.5s;
+        --animate-delay:3s;
+    }
 }
 .pale_red{
     background-color: $pale_red;
+    .animate__bounceIn{
+        --animate-duration:1.5s;
+    }
 }
 .pale_orange{
     background-color: $pale_orange;
+    .animate__lightSpeedInLeft{
+        --animate-duration:1s;
+
+    }
 }
 .hypay-wrapper{
     margin: 2rem;
@@ -148,5 +161,36 @@ body{
             float: right;
             margin-left:2rem ;
         }
+    }
+}
+
+.wait_dots{
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #D6DBDF;
+    position: absolute;
+    top: 10rem;
+    z-index: 10;
+    width: 100%;
+    padding-right: 4rem;
+    align-items: center;
+    
+    i{
+        margin-right: 1rem;
+
+    }
+    .tiny{
+        font-size: 1rem;
+    }
+    .small{
+        font-size: 1.2rem;
+    }
+    .medium{
+        font-size: 1.4rem;
+    }
+    .large{
+        font-size: 1.6rem;
     }
 }

@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import './sass/theme.scss'
-import './sass/main.scss'
+import './sass/theme.scss';
+import './sass/main.scss';
+import 'animate.css';
+import './font-awesome-4.7.0/css/font-awesome.min.css'
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,22 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-class Sckeleton extends React.Component{
-    render(props){
+
+export default function Sckeleton (props) {
+
+        const [hovered,setHovered]= useState(false);
+        const toggleHover =()=> setHovered(!hovered);
+        const animeClass= hovered ? props.anime:"";
         return(
-            <div className="sckeleton">
-                <img  src={this.props.img} alt="animation"/>
+            <div className="sckeleton" onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
+                <img className={animeClass} src={props.img} alt="animation"/>
                 <div className="separator"></div>
-                <div className="body">{this.props.content}</div>
+                <div className="body">{props.content}</div>
             </div>
         );
     }
 
 
-}
+
 
 function SckeletonTitle() {
     return(
-        <h2>Some thing you waited</h2>
+        <h2>Something you waited</h2>
     );
 }
 
@@ -29,6 +33,4 @@ function Content(props) {
     )
     
 }
-
-export default Sckeleton;
 export  {SckeletonTitle,Content}
